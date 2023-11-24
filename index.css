@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+body{
+    background:#0b0911f5 ;
+}
+
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 20px;
+}
+
+header .navbar{
+    max-width: 1280px;
+    margin:0 auto;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar .menu-links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar .menu-links .language-items a{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+} 
+
+.navbar .menu-links .language-items span{
+    font-size: 1.3rem;
+}
+
+.navbar .menu-links li a:hover{
+    color: #a8873f
+}
+
+/* HERO SECTION */
+.hero-section{
+    height: 100vh;
+    background-image: url(assets/pexels-darina-belonogova-7541436.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    text-align: center;
+}
+
+ .hero-section .content{
+    max-width: 1280px;
+    margin: 0 auto 40px;
+    width: 100%;
+}
+
+.hero-section .content h1 {
+    color: #fff;
+    font-size: 3rem;
+    line-height:65px ;
+    text-align: center;
+}
+
+.p{
+    color:#fff ;
+    
+    
+}
+
+.btn{
+    border: 1px solid#fff;
+    padding: 15px 30px;
+    border-radius: 3px;
+}
+
+.btn:hover{
+    background-color: #a8873f;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar .menu-links{
+        height: 100vh;
+        max-width: 300px;
+        width: 100%;
+        background: #fff;
+        position: fixed;
+        left: 300px;
+        top: 0;
+        display: block;
+        padding: 75px 40px 0;
+        transition: left o.2s ease;
+    }
+}
+
